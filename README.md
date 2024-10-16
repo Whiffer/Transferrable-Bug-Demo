@@ -26,11 +26,12 @@ This minimal example project was created to reproduce an apparent macOS Sequoia 
 
 ### The following error is displayed on the debug console for each Item being dragged:
 
+```
 Error loading
 com.Demo.persistentModelID:
 Error Domain=NSItemProviderErrorDomain Code=-1000 "Cannot load representation of type com.demo.persistentmodelid" UserInfo={NSLocalizedDescription=Cannot load representation of type com.demo.persistentmodelid, NSUnderlyingError=0x6000024c0810 {Error Domain=NSCocoaErrorDomain Code=3072 "The operation was cancelled."}}
 Error loading PersistentIdentifier: The operation couldn’t be completed. (CoreTransferable.TransferableSupportError error 0.)
-
+```
 
 
 ### Steps to Reproduce on macOS Sequoia after removing .onMove() modifier
