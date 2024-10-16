@@ -94,6 +94,12 @@ struct ItemsListView: View {
                     return true
                 }
             }
+// Remove the .onMove() modifier below and both .dropDestination() modifiers will work properly on both Sonoma and Sequoia.
+            .onMove { indexSet, to in
+                for index in indexSet {
+                    print("\(items[index].timestamp) moved to: \(to)")
+                }
+            }
         }
     }
 }
